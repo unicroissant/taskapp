@@ -1,0 +1,259 @@
+:root{
+    --background-base : rgb(7, 7, 15);
+    --Background-app :rgb(177, 161, 161);
+  
+  
+  }
+
+  
+  h1 h2 h3{
+    font-weight: 600;
+  }
+  .container {
+    background-color: rgb(11, 10, 10);
+    width: 720px;
+    min-height: 576px;
+    margin: 0 auto;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    position: relative;
+  }
+  
+  .nav-left .account_info{ 
+    padding: 0.7 rem ;
+    display: flex;
+  
+    font-size: 0.9rem;
+    line-height: 0.5;
+    
+  
+  
+  }
+  .nav-left .account_info img{ 
+  
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  
+  
+  }
+  .nav-left .account_info .info h2{ 
+  
+    font-size: 1.5 rem;
+  
+  margin-bottom: 0.1rem; 
+  /* margin-top: 0.3rem;  */
+  }
+  .nav-left .account_info .info p,
+  .nav-left .account_info .info span
+  { 
+  
+    font-size: 0.7rem;
+    opacity: 0.7;
+  
+    
+  }
+  .nav-left .search{
+    padding: 0.7rem;
+  }
+  .nav-left .account_info,
+  .nav-left .search,
+  .nav-left .category{
+      padding: 0.7rem;
+  } 
+  .nav-left .search input[type="text"]{
+   width: 97%;
+   background-color: inherit;
+  
+    outline: none;
+    border: none;
+   border-bottom: rgb(179, 29, 29) 2px solid;
+   color: white;
+  }
+  body {
+    background-color: rgb(227, 237, 240);
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+  }
+  .nav-left .category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9 rem
+  }
+  .nav-left .category ul li,
+  .main .app.task-list ul {
+  
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    justify-content: space-between;
+  }
+
+  .nav-left .category ul li .main-cat span p{
+    align-items: center;
+    background-color: inherit;
+    color: white;
+    border: 0px;
+    outline: 0px 0px 2px 0px;
+  }
+  .nav-left .category ul li span{
+    margin: 0 20px 0 0;
+    align-items: center;
+  
+  
+  }
+  .nav-left .category ul li  .badgth{
+    padding : 1px 7px ;
+    background-color: brown;
+    font-size : 0.7 rem;
+    border-radius: 50%;
+
+
+
+  }
+
+  
+  .nav-left .category ul li:hover{
+    border-radius: 3px;
+    cursor: pointer;
+    background-color:var(--Background-app)
+  }
+  .nav-left .Add{
+    position: absolute;
+    bottom: 0;
+  }
+  .nav-left .Add a {
+    display: block;
+    width:100%;
+    border: none;
+    /* background-color: #2f8b2f; */
+    padding: 7px 60px 7px 0.7rem;
+    /* font-size: 14px; */
+    cursor: pointer;
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+  }
+  .nav-left .Add a span{
+    margin: 0 2px 0 0;
+  }
+  .main { 
+    background-color: rgb(34, 33, 33);
+    border-radius: 7px 0 7px 0;
+    min-height: 100%;
+    position: relative;
+  }
+  .main .app{
+    margin : 25px; 
+  
+    /* position: relative; */
+  
+  }
+  
+  .main .app .title{
+  
+     color: rgb(11, 137, 247); 
+     display: flex;
+    align-items: center;
+  
+  }
+  .main .app .title h3{
+  
+     color: rgb(13, 150, 241); 
+      margin-left: 1rem;
+      font-weight: 600;
+  }
+  
+  .main .app .task-list ul li {
+  
+    padding: 9px 9px;
+    align-items: center;
+    /* width: 100%; */
+    /* margin-bottom: 2px;
+    margin-left: 2px; */
+    background-color:black ;
+    border-radius: 5px;
+  }
+  .main .app ul li span{
+    margin : 0 10px 0 0;
+    
+  }
+  .main .app ul li:hover{
+  
+    border-radius: 3px;
+    cursor: pointer;
+    background-color:rgb(86, 130, 156);
+  }
+  
+  
+  .main .task-list ul {
+    margin-top: 15px;
+    list-style: none;
+    height :380px;
+    overflow-y:auto;
+    /* padding-left: 5px; */
+    padding: 9px 0;
+  
+  }
+  .main .task-list ul li .desc {
+    opacity: 0.6;
+    font-size:0.6rem  ;
+    display: flex;
+    justify-content: space-between ;
+    width: 100%;
+  
+   
+  }
+
+  .main .add-new-task{
+  width: 50%;
+  padding:10px;
+  display: block;
+  position: absolute;
+  bottom: 10;
+  background-color: black;
+  display: flex;
+  }
+  .main .add-new-task a {
+    margin: 0 20px 0 0;
+    display: flex;
+    border-radius: 4px;
+ 
+  
+
+  }
+  .main .add-new-task a b{
+    padding-left: 10px;
+    align-items: center;
+    font-weight: 400;
+    padding-top: 3px;
+  }
+  .main .add-new-task input[type="text"],
+  .category ul li input{
+    padding-left: 10px;
+    /* align-items: center; */
+    font-weight: 400;
+    padding-top: 3px;
+    outline: 0px 0px 2px 0px;
+    border: 0px;
+    background-color: inherit;
+    color: white;
+  }
+  /* .main .add-new-task .option{
+    width: 85%;
+  } */
+  
+  
+  
+  
+  
+  
+  
+  
